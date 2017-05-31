@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AGf-cs-hvQ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Launch Screen View Controller-->
+        <scene sceneID="78o-NS-Moh">
+            <objects>
+                <viewController id="AGf-cs-hvQ" customClass="LaunchScreenViewController" customModule="POCLaunchScreen" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rnF-xT-gfy"/>
+                        <viewControllerLayoutGuide type="bottom" id="bT0-Wq-2PC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="d4I-Vx-Q7c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wK5-nV-DBF">
+                                <rect key="frame" x="166" y="323" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-tridem-pharma" translatesAutoresizingMaskIntoConstraints="NO" id="wDA-2V-syk">
+                                <rect key="frame" x="64" y="50" width="246" height="89"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wK5-nV-DBF" firstAttribute="centerX" secondItem="d4I-Vx-Q7c" secondAttribute="centerX" id="NV1-71-rSs"/>
+                            <constraint firstItem="wDA-2V-syk" firstAttribute="centerX" secondItem="d4I-Vx-Q7c" secondAttribute="centerX" id="NZO-qW-N69"/>
+                            <constraint firstItem="wDA-2V-syk" firstAttribute="top" secondItem="rnF-xT-gfy" secondAttribute="bottom" constant="30" id="Upg-UG-Uk8"/>
+                            <constraint firstItem="bT0-Wq-2PC" firstAttribute="top" secondItem="wK5-nV-DBF" secondAttribute="bottom" constant="323" id="WA4-Bh-T61"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="constraintBottomLabel" destination="WA4-Bh-T61" id="rzg-k9-aRL"/>
+                        <outlet property="lblVersion" destination="wK5-nV-DBF" id="bTR-3n-1DF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7FE-c1-6wo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="97" y="213"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo-tridem-pharma" width="246" height="89"/>
+    </resources>
+</document>

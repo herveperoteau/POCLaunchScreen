@@ -12,6 +12,8 @@
 		B2D057E31EDEF7E7007CC01B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2D057E11EDEF7E7007CC01B /* Main.storyboard */; };
 		B2D057E51EDEF7E7007CC01B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2D057E41EDEF7E7007CC01B /* Assets.xcassets */; };
 		B2D057E81EDEF7E7007CC01B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2D057E61EDEF7E7007CC01B /* LaunchScreen.storyboard */; };
+		B2D057F01EDEF82A007CC01B /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D057EF1EDEF82A007CC01B /* LaunchScreenViewController.swift */; };
+		B2D057F21EDEF8C3007CC01B /* LaunchScreenDynamic.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2D057F11EDEF8C3007CC01B /* LaunchScreenDynamic.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		B2D057E41EDEF7E7007CC01B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2D057E71EDEF7E7007CC01B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2D057E91EDEF7E7007CC01B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2D057EF1EDEF82A007CC01B /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
+		B2D057F11EDEF8C3007CC01B /* LaunchScreenDynamic.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreenDynamic.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				B2D057E41EDEF7E7007CC01B /* Assets.xcassets */,
 				B2D057E61EDEF7E7007CC01B /* LaunchScreen.storyboard */,
 				B2D057E91EDEF7E7007CC01B /* Info.plist */,
+				B2D057EF1EDEF82A007CC01B /* LaunchScreenViewController.swift */,
+				B2D057F11EDEF8C3007CC01B /* LaunchScreenDynamic.storyboard */,
 			);
 			path = POCLaunchScreen;
 			sourceTree = "<group>";
@@ -96,6 +102,7 @@
 				TargetAttributes = {
 					B2D057D91EDEF7E7007CC01B = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = E536PJHTHJ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -124,6 +131,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2D057E81EDEF7E7007CC01B /* LaunchScreen.storyboard in Resources */,
+				B2D057F21EDEF8C3007CC01B /* LaunchScreenDynamic.storyboard in Resources */,
 				B2D057E51EDEF7E7007CC01B /* Assets.xcassets in Resources */,
 				B2D057E31EDEF7E7007CC01B /* Main.storyboard in Resources */,
 			);
@@ -137,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2D057E01EDEF7E7007CC01B /* ViewController.swift in Sources */,
+				B2D057F01EDEF82A007CC01B /* LaunchScreenViewController.swift in Sources */,
 				B2D057DE1EDEF7E7007CC01B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,9 +269,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E536PJHTHJ;
 				INFOPLIST_FILE = POCLaunchScreen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.viseo.POCLaunchScreen;
+				PRODUCT_BUNDLE_IDENTIFIER = com.peroteau.herve.viseo.POCLaunchScreen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -272,9 +282,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E536PJHTHJ;
 				INFOPLIST_FILE = POCLaunchScreen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.viseo.POCLaunchScreen;
+				PRODUCT_BUNDLE_IDENTIFIER = com.peroteau.herve.viseo.POCLaunchScreen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
