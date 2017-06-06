@@ -24,10 +24,10 @@ class LaunchScreenViewController: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        self.startAnimationLabel()
+        self.startAnimation()
     }
     
-    private func startAnimationLabel() {
+    private func startAnimation() {
 
         constraintBottomLabel.constant = 20
         
